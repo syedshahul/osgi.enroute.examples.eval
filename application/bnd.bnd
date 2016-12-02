@@ -2,10 +2,10 @@
 	Bundle-Description: \
 		Provides a Web based application to evaluate the evaluator
 		
-	EnRoute-Application: 	osgi.enroute.examples.eval
+	EnRoute-Application: 	com.tmft.enroute.eval
 
 
 
 -includeresource: \
-	{static/osgi.enroute.examples.eval/index.html=src/main/resources/static/osgi.enroute.examples.eval/index.html}
+	{static/com.tmft.enroute.eval/index.html=src/main/resources/static/com.tmft.enroute.eval/index.html}
 

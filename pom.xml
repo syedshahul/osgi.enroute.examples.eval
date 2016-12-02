@@ -4,26 +4,28 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.osgi</groupId>
-	<artifactId>osgi.enroute.examples.eval</artifactId>
+	<groupId>com.tmft</groupId>
+	<artifactId>com.tmft.enroute.eval</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 
 	<packaging>pom</packaging>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <scanPath>com.tmft</scanPath>
+    </properties>
+
 <modules>
 			<module>api</module>
-			<module>simple.provider</module>
+
 			<module>parsii.provider</module>
 			<module>command</module>
 			<module>application</module>
-			<module>bndrun</module>
+
 			<module>test</module>
 			<module>integration-test</module>
 	</modules>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
   
 	<build>
 		<plugins>
@@ -58,7 +60,45 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+			<!--<plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>3.2.0</version>
+                <extensions>true</extensions>
+			</plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>3.2.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Export-Package></Export-Package>
+                        <Import-Package></Import-Package>
+                        <_versionpolicy>[$(version;==;$(@)),$(version;+;$(@)))</_versionpolicy>
+                        <_removeheaders>Ignore-Package,Include-Resource,Private-Package,Embed-Dependency</_removeheaders>
+                    </instructions>
+                    <unpackBundle>true</unpackBundle>
+                </configuration>
+            </plugin>-->
+            <plugin>
+                <groupId>org.apache.karaf.tooling</groupId>
+                <artifactId>karaf-maven-plugin</artifactId>
+                <version>4.0.7</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <startLevel>80</startLevel>
+                    <aggregateFeatures>true</aggregateFeatures>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>features-generate-descriptor</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 		</plugins>
 	</build>
 	<dependencies>
@@ -76,7 +116,7 @@
 		</dependency>
 		
 	</dependencies>
-	<repositories>
+	<!--<repositories>
 		<repository>
 			<id>osgi-snapshots</id>
 			<url>https://oss.sonatype.org/content/groups/osgi/</url>
@@ -93,7 +133,7 @@
                 <enabled>true</enabled>
             </snapshots>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories>-->
 
 </project>
 

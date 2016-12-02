@@ -6,12 +6,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.osgi</groupId>
-		<artifactId>osgi.enroute.examples.eval</artifactId>
+		<groupId>com.tmft</groupId>
+		<artifactId>com.tmft.enroute.eval</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>..</relativePath>
 	</parent>
-	<artifactId>osgi.enroute.examples.eval.api</artifactId>
+	<artifactId>com.tmft.enroute.eval.api</artifactId>
 	<packaging>jar</packaging>
 	<description>Eval API</description>
 	

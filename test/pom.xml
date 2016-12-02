@@ -6,17 +6,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.osgi</groupId>
-		<artifactId>osgi.enroute.examples.eval</artifactId>
+		<groupId>com.tmft</groupId>
+		<artifactId>com.tmft.enroute.eval</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>..</relativePath>
 	</parent>
 	<packaging>jar</packaging>
-	<artifactId>osgi.enroute.examples.eval.test</artifactId>
+	<artifactId>com.tmft.enroute.eval.test</artifactId>
 	<dependencies>
 		<dependency>
-			<groupId>org.osgi</groupId>
-			<artifactId>osgi.enroute.examples.eval.api</artifactId>
+			<groupId>com.tmft</groupId>
+			<artifactId>com.tmft.enroute.eval.api</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>

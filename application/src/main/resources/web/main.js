@@ -1,10 +1,10 @@
 'use strict';
 (function() {
 	var MODULE = 
-		angular.module('osgi.enroute.examples.eval', [ 'ngRoute' ] );
+		angular.module('com.tmft.enroute.eval', [ 'ngRoute' ] );
 	MODULE.config( function($routeProvider) {
-		$routeProvider.when('/', { controller: mainProvider, templateUrl: '/osgi.enroute.examples.eval/main/htm/home.htm'});
-		$routeProvider.when('/about', { templateUrl: '/osgi.enroute.examples.eval/main/htm/about.htm'});
+		$routeProvider.when('/', { controller: mainProvider, templateUrl: '/com.tmft.enroute.eval/main/htm/home.htm'});
+		$routeProvider.when('/about', { templateUrl: '/com.tmft.enroute.eval/main/htm/about.htm'});
 		$routeProvider.otherwise('/');
 	});
 	MODULE.run( function($rootScope, $location) {

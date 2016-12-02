@@ -5,13 +5,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.osgi</groupId>
-		<artifactId>osgi.enroute.examples.eval</artifactId>
+		<groupId>com.tmft</groupId>
+		<artifactId>com.tmft.enroute.eval</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>..</relativePath>
 	</parent>
 
-	<artifactId>osgi.enroute.examples.eval.integration-test</artifactId>
+	<artifactId>com.tmft.enroute.eval.integration-test</artifactId>
 
 	<packaging>pom</packaging>
 
@@ -41,13 +41,13 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>org.osgi</groupId>
-			<artifactId>osgi.enroute.examples.eval.parsii.provider</artifactId>
+			<groupId>com.tmft</groupId>
+			<artifactId>com.tmft.enroute.eval.parsii.provider</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>org.osgi</groupId>
-			<artifactId>osgi.enroute.examples.eval.test</artifactId>
+			<groupId>com.tmft</groupId>
+			<artifactId>com.tmft.enroute.eval.test</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>

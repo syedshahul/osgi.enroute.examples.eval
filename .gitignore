@@ -4,3 +4,12 @@ generated/
 */generated/
 *.class
 *.jar
+
+.idea/
+.project
+.settings/
+*.classpath
+*.project
+*.settings
+*.iml
+*TEST-*

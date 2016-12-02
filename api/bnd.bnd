@@ -8,5 +8,5 @@ Bundle-Description: 				\
 Require-Capability: \
 	compile-only
 
-Export-Package: osgi.enroute.examples.eval.api
+Export-Package: com.tmft.enroute.eval.api
 
